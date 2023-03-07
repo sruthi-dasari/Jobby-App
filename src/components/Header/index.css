@@ -1,0 +1,23 @@
+.header-container {
+  background-color: #272727;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header-website-logo {
+  height: 27px;
+  width: 90px;
+}
+
+.icons-container {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+  color: #ffffff;
+}
