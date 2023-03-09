@@ -1,0 +1,149 @@
+.jobs-container {
+  background-color: #000000;
+  /* height: 100vh; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box-container {
+  width: 100%;
+  border: 1px solid #b6c5ff;
+  height: 33px;
+  border-radius: 5px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-box {
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+.search-button {
+  background-color: #272727;
+  height: 100%;
+  width: 60px;
+  border: none;
+}
+
+.search-icon {
+  color: #ffffff;
+  width: 40px;
+}
+
+.profile-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  padding: 10px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 20px;
+}
+
+.profile-img {
+  height: 40px;
+  width: 40px;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: #6366f1;
+}
+
+.profile-bio {
+  font-size: 11px;
+  font-family: 'Roboto';
+  color: #7e858e;
+}
+
+.retry-button {
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 10px;
+  font-family: 'Roboto';
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+  align-self: center;
+  margin: 70px;
+}
+
+.seperator {
+  background-color: #b6c5ff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* justify-content: stretch; */
+  width: 100%;
+  /* align-self: stretch; */
+}
+
+.type-of-emp-heading {
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+
+.employment-types-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.employment-type-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.label {
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.failure-view-img {
+  height: 180px;
+  width: 260px;
+}
+
+.failure-view-heading {
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+
+.failure-view-para {
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #b6c5ff;
+}
+
+.failure-retry-btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 10px;
+  font-family: 'Roboto';
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+}

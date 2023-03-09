@@ -4,8 +4,12 @@ import {Redirect} from 'react-router-dom'
 
 import Header from '../Header'
 
-const Home = () => {
-  const onClickFindJobs = () => <Redirect to="/jobs" />
+const Home = props => {
+  const onClickFindJobs = () => {
+    const {history} = props
+    history.replace('/jobs')
+  }
+
   return (
     <>
       <Header />
