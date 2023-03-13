@@ -32,6 +32,7 @@
   height: 100%;
   width: 60px;
   border: none;
+  cursor: pointer;
 }
 
 .search-icon {
@@ -92,9 +93,7 @@
   background-color: #b6c5ff;
   margin-top: 20px;
   margin-bottom: 20px;
-  /* justify-content: stretch; */
   width: 100%;
-  /* align-self: stretch; */
 }
 
 .type-of-emp-sal-heading {
@@ -121,6 +120,14 @@
   font-family: 'Roboto';
   color: #ffffff;
   margin-left: 5px;
+}
+
+.salary-radio-icon {
+  cursor: pointer;
+}
+
+.employment-checkbox {
+  cursor: pointer;
 }
 
 .failure-no-jobs-view-container {

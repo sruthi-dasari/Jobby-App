@@ -29,6 +29,7 @@
 .logout-btn {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .header-container-large-devices {
@@ -78,5 +79,6 @@
     width: 160px;
     height: 50px;
     font-size: 16px;
+    cursor: pointer;
   }
 }
