@@ -6,7 +6,11 @@
   flex-direction: column;
 }
 
-.search-box-container {
+.search-box-container-large-devices {
+  display: none;
+}
+
+.search-box-container-small-devices {
   width: 100%;
   border: 1px solid #b6c5ff;
   height: 33px;
@@ -20,6 +24,7 @@
   background: transparent;
   border: none;
   width: 100%;
+  color: #ffffff;
 }
 
 .search-button {
@@ -62,7 +67,13 @@
   color: #7e858e;
 }
 
-.retry-button {
+.profile-failure-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-retry-button {
   background-color: #4f46e5;
   color: #ffffff;
   font-size: 10px;
@@ -86,15 +97,16 @@
   /* align-self: stretch; */
 }
 
-.type-of-emp-heading {
+.type-of-emp-sal-heading {
   font-size: 14px;
   font-family: 'Roboto';
   color: #ffffff;
 }
 
-.employment-types-container {
+.employment-sal-types-container {
   display: flex;
   flex-direction: column;
+  padding-left: 0px;
 }
 
 .employment-type-container {
@@ -111,28 +123,30 @@
   margin-left: 5px;
 }
 
-.failure-view-container {
+.failure-no-jobs-view-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
 
-.failure-view-img {
+.failure-no-jobs-view-img {
   height: 180px;
   width: 260px;
 }
 
-.failure-view-heading {
+.failure-no-jobs-view-heading {
   font-size: 12px;
   font-family: 'Roboto';
   color: #ffffff;
 }
 
-.failure-view-para {
+.failure-no-jobs-view-para {
   font-size: 12px;
   font-family: 'Roboto';
-  color: #b6c5ff;
+  color: #ffffff;
+  text-align: center;
+  max-width: 180px;
 }
 
 .failure-retry-btn {
@@ -146,4 +160,122 @@
   padding-bottom: 10px;
   border: none;
   border-radius: 3px;
+}
+
+.job-cards-container {
+  padding-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs-container {
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+  }
+
+  .profile-and-filters-container {
+    order: -1;
+    margin-right: 40px;
+    width: 30vw;
+  }
+
+  .search-and-job-cards-container {
+    width: 70vw;
+  }
+
+  .search-box-container-small-devices {
+    display: none;
+  }
+
+  .search-box-container-large-devices {
+    width: 450px;
+    border: 1px solid #b6c5ff;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-input-box {
+    font-size: 20px;
+  }
+
+  .search-icon {
+    width: 50px;
+    height: 20px;
+  }
+
+  .profile-container {
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .profile-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .profile-name {
+    font-size: 24px;
+  }
+
+  .profile-bio {
+    font-size: 16px;
+  }
+
+  .profile-retry-button {
+    font-size: 14px;
+    height: 50px;
+    width: 120px;
+  }
+
+  .type-of-emp-sal-heading {
+    font-size: 18px;
+  }
+
+  .employment-type-container {
+    padding: 8px;
+  }
+
+  .employment-checkbox {
+    height: 18px;
+    width: 18px;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  .salary-range-container {
+    padding: 8px;
+  }
+
+  .salary-radio-icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .failure-no-jobs-view-img {
+    height: 500px;
+    width: 700px;
+  }
+
+  .failure-no-jobs-view-heading {
+    font-size: 46px;
+  }
+
+  .failure-no-jobs-view-para {
+    font-size: 24px;
+
+    max-width: 580px;
+  }
+
+  .failure-retry-btn {
+    font-size: 20px;
+    height: 50px;
+    width: 140px;
+    border-radius: 3px;
+  }
 }

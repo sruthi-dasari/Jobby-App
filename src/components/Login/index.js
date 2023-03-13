@@ -3,7 +3,7 @@ import {Component} from 'react'
 
 import Cookies from 'js-cookie'
 
-// import {Redirect} from 'react-router-dom'
+import {Redirect} from 'react-router-dom'
 
 class Login extends Component {
   state = {
@@ -36,7 +36,9 @@ class Login extends Component {
     this.setState({showSubmitError: true, errorMsg})
   }
 
-  onSubmitForm = async () => {
+  onSubmitForm = async event => {
+    event.preventDefault()
+
     const {username, password} = this.state
     const userDetails = {username, password}
     const url = 'https://apis.ccbp.in/login'
@@ -45,9 +47,11 @@ class Login extends Component {
       body: JSON.stringify(userDetails),
     }
     const response = await fetch(url, options)
-    const data = response.json()
+    const data = await response.json()
 
-    console.log(data)
+    // console.log(response)
+
+    // console.log(data)
     if (response.ok === true) {
       this.onSubmitSuccess(data.jwt_token)
     } else {
@@ -58,10 +62,10 @@ class Login extends Component {
   render() {
     const {username, password, showSubmitError, errorMsg} = this.state
 
-    // const jwtToken = Cookies.get('jwt_token')
-    // if (jwtToken !== undefined) {
-    //   return <Redirect to="/" />
-    // }
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
     return (
       <div className="login-container">
         <div className="login-inner-container">
@@ -70,7 +74,7 @@ class Login extends Component {
             alt="website logo"
             className="website-logo"
           />
-          <form onSubmit={this.onSubmitForm}>
+          <form onSubmit={this.onSubmitForm} className="form-container">
             <label htmlFor="username" className="label-text">
               USERNAME
             </label>

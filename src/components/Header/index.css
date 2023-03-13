@@ -1,8 +1,9 @@
 .header-container {
   background-color: #272727;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 25px;
 }
 
 .header-website-logo {
@@ -14,10 +15,68 @@
   width: 150px;
   display: flex;
   justify-content: space-between;
+  padding-left: 0px;
+  list-style: none;
+  margin: 0px;
 }
 
 .icon {
   height: 35px;
   width: 35px;
   color: #ffffff;
+}
+
+.logout-btn {
+  background: transparent;
+  border: none;
+}
+
+.header-container-large-devices {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: none;
+  }
+
+  .header-container-large-devices {
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .header-website-logo-large-devices {
+    height: 57px;
+    width: 200px;
+  }
+
+  .icons-container-large-devices {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+  }
+
+  .home-jobs-link-large-devices {
+    text-decoration: none;
+  }
+
+  .home-jobs-list-item-large-devices {
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 500;
+  }
+
+  .logout-btn-large-devices {
+    color: #ffffff;
+    background-color: #4f46e5;
+    border-radius: 10px;
+    border: none;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+  }
 }

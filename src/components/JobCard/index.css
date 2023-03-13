@@ -1,3 +1,7 @@
+.job-card-link-item {
+  text-decoration: none;
+}
+
 .job-card-container {
   background-color: #202020;
   border-radius: 10px;
@@ -82,4 +86,62 @@
 .job-description {
   color: #ffffff;
   font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .job-card-container {
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+
+  .company-logo {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+  }
+
+  .title-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .star-icon {
+    margin-right: 10px;
+    height: 28px;
+    width: 28px;
+  }
+
+  .rating-text {
+    font-size: 24px;
+  }
+
+  .location-type-inner-container {
+    margin-right: 20px;
+  }
+
+  .location-job-icon {
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .location-employment-text {
+    font-size: 18px;
+  }
+
+  .package-text {
+    font-size: 22px;
+  }
+
+  .description-title {
+    font-size: 22px;
+  }
+
+  .job-description {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
