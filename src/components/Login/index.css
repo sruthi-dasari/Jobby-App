@@ -1,5 +1,6 @@
 .login-container {
   height: 100vh;
+  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +14,8 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
+  /* margin: 10px; */
+  width: 300px;
   /* flex-shrink: 2; */
 }
 
@@ -34,7 +37,7 @@
 }
 
 .input-container {
-  width: 320px;
+  /* width: 100%; */
   height: 40px;
   border: 1px solid #b6c5ff;
   margin-top: 10px;
@@ -55,7 +58,7 @@
 
 .login-btn {
   margin-top: 20px;
-  width: 320px;
+  width: 100%;
   height: 45px;
   border: none;
   border-radius: 10px;
@@ -88,7 +91,7 @@
     padding: 70px;
     display: flex;
     flex-direction: column;
-    height: 550px;
+    /* height: 550px; */
     width: 700px;
   }
 
